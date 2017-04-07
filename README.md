@@ -1,0 +1,2 @@
+# hey-log
+console.log
