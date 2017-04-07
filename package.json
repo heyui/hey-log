@@ -1,0 +1,32 @@
+{
+  "name": "hey-log",
+  "version": "0.0.1",
+  "description": "console.log, log, js",
+  "main": "build/utils.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hey-ui/hey-log.git"
+  },
+  "keywords": [
+    "log",
+    "hey"
+  ],
+  "author": {
+    "name": "alias"
+  },
+  "license": "The MIT License",
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/hey-ui/hey-log/issues"
+  },
+  "babel": {
+    "presets": ["es2015"]
+  },
+  "scripts": {
+    "build": "babel ./log.js -d build",
+    "min": "babel build/log.js --minified --no-babelrc -o build/log.min.js",
+    "test": "mocha --compilers js:babel-core/register ./test/*.js"
+  },
+  "homepage": "https://github.com/hey-ui/hey-log#readme",
+  "readmeFilename": "README.md"
+}
