@@ -10,12 +10,12 @@
     return this;
   }
 
-  heyLog.info() {
+  heyLog.info = function() {
     console.info.apply(console, arguments);
     return this;
   }
 
-  heyLog.error() {
+  heyLog.error = function() {
     console.error.apply(console, arguments);
     return this;
   }
